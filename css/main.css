@@ -142,8 +142,8 @@ textarea {
 
    header nav ul {
      display: flex;
-     justify-content: center;
-     align-items: center;
+     justify-content: space-around;
+     width: 100%;
 
    }
 
@@ -252,14 +252,19 @@ textarea {
 
    /* -------------------- Footer Styles -------------------- */
 
+   footer {
+     flex-direction:column;
+   }
+
    footer .content-wrapper {
      width: 55%;
      margin: 50px 0;
 
    }
 
-   .contact h1, p {
+   .footer-content h4, p {
      text-align: center;
+     width: 100%;
    }
 
 
@@ -271,7 +276,7 @@ textarea {
 
    .social-icons {
      display: flex;
-     justify-content: center;
+     justify-content: space-around;
      align-items: center;
    }
 
