@@ -98,7 +98,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+   .content-wrapper {
+     width: 90%;
+   }
    /* -------------------- Base Header - Footer Styles -------------------- */
 
    header,
@@ -113,7 +115,7 @@ textarea {
    /* Header Styles */
 
    header {
-
+     padding: 15px 0;
    }
 
    header .content-wrapper {
@@ -121,13 +123,12 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
-     width: 95%;
+     width: 100%
    }
 
    .header-divider {
      justify-content: center;
      align-items: center;
-     padding: 5px;
      width: 60%;
    }
 
@@ -143,6 +144,7 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
+
    }
 
    /* -------------------- Main Styles - Homepage -------------------- */
@@ -191,10 +193,6 @@ textarea {
      flex-flow: row wrap;
      width:100%;
 
-   }
-
-  article .feature-item {
-     width:53%;
    }
 
   article p {
