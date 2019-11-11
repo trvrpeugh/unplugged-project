@@ -97,6 +97,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
    /* -------------------- Base Header - Footer Styles -------------------- */
 
    header,
@@ -105,6 +107,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     width: 100%;
    }
 
    /* Header Styles */
@@ -118,10 +121,14 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     width: 95%;
    }
 
    .header-divider {
-
+     justify-content: center;
+     align-items: center;
+     padding: 5px;
+     width: 60%;
    }
 
    header nav {
@@ -129,6 +136,7 @@ textarea {
      justify-content: space-around;
      align-items: center;
      flex-flow: row wrap;
+     width: 60%;
    }
 
    header nav ul {
@@ -181,8 +189,17 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     width:100%;
 
    }
+
+  article .feature-item {
+     width:53%;
+   }
+
+  article p {
+    width: 53%;
+  }
 
    .font-awesomeicon {
 
@@ -237,17 +254,16 @@ textarea {
 
    /* -------------------- Footer Styles -------------------- */
 
-   footer {
+   footer .content-wrapper {
+     width: 55%;
+     margin: 50px 0;
 
    }
 
-   .footer-content {
-
+   .contact h1, p {
+     text-align: center;
    }
 
-   .contact {
-
-   }
 
    footer .social {
      display: flex;
@@ -262,6 +278,7 @@ textarea {
    }
 
    .copyright {
+     width: 53%;
 
    }
 
