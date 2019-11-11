@@ -376,16 +376,57 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media screen and (min-width: 768px) {
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+   /*Tablet styles here*/
+
+   /* -------------------- Header Styles -------------------- */
+   header .content-wrapper{
+     width: 83%;
+   }
+
+   .header-divider {
+     width:40%;
+   }
+
+   nav {
+     float: right;
+     width: 60%;
+   }
+   /* -------------------- Main Styles -------------------- */
+   aside .content-wrapper {
+     display: flex;
+     flex-flow: row;
+     width: 83%
+   }
+
+  .form-description {
+    width: 50%;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .features {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .features article {
+    width: 50%;
+  }
+   /* -------------------- Footer Styles -------------------- */
+
+
+   @media screen and (min-width: 1200px) {
+
+   /*Desktop styles here*/
+
+   }
 
 /* ==========================================================================
    Print styles.
