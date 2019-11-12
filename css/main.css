@@ -397,7 +397,8 @@ textarea {
    aside .content-wrapper {
      display: flex;
      flex-flow: row;
-     width: 83%
+     width: 100%;
+     margin: 0 50px;
    }
 
   .form-description {
@@ -416,7 +417,11 @@ textarea {
     width: 100%;
   }
 
+  .features h2 {
+    padding: 64px;
+  }
   .features article {
+    float:left;
     width: 50%;
   }
    /* -------------------- Footer Styles -------------------- */
