@@ -243,6 +243,10 @@ textarea {
      flex-flow: row wrap;
    }
 
+   .contact-content p {
+     text-align: left;
+   }
+
    /* -------------------- FAQ Page Styles -------------------- */
 
    .faq {
@@ -250,6 +254,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     margin: 100px 0;
    }
 
    .faq-content-wrapper {
@@ -387,7 +392,7 @@ textarea {
    /* General Styles */
 
    .content-wrapper {
-     max-width: 640px;
+     max-width: 83%;
      margin: 0;
    }
 
@@ -492,32 +497,42 @@ textarea {
      width:100% ;
    }
 
-/* About Styles*/
-
+/!--------About Page Styles--------!/
+.mission {
+  margin: 100px 0;
+}
 .mission-content {
-        display:
+        display: flex;
         justify-content: space-between;
-        align-items:
+        align-items:center;
+        width: 50%;
+        float: left;
     }
 
     .mission-content p {
-        width:
+      text-align: left;
+      padding: 15px;
     }
 
-    .contact-section .content-wrapper h2 {
-        width:
+    .contact-wrapper {
+      margin: 100px 0;
+
     }
 
     .contact-content {
-        display:
-        justify-content:
-        align-items:
+        flex-flow: column;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width: 50%;
+        float: left;
 }
 
-/* FAQ Styles*/
+
+/!--------FAQ Page Styles--------!/
 
 .faq {
-  margin: 90px 0;
+
 }
 .faq-content {
   display: flex;
