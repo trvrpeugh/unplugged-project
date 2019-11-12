@@ -186,18 +186,21 @@ textarea {
      flex-flow: row wrap;
    }
 
-   article {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-     width:100%;
-
+   .features h2 {
+     margin-bottom: 60px;
    }
 
-  article p {
-    width: 53%;
+   .features article {
+   width: 55%;
+   margin: 30px 0;
   }
+
+  .features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
    .font-awesomeicon {
 
@@ -210,10 +213,16 @@ textarea {
    .reviews{
      display: flex;
      justify-content: center;
-     align-items: center;
      flex-flow: row wrap;
    }
+   .reviews h2 {
+     margin-bottom: 40px;
+   }
 
+   .reviews p {
+     text-align: left;
+   }
+   
    .reviews-photo {
 
    }
@@ -418,7 +427,7 @@ textarea {
   }
 
   .features h2 {
-    padding: 64px;
+    padding: 0 54px;
   }
   .features article {
     float:left;
