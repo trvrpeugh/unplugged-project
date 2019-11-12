@@ -222,7 +222,7 @@ textarea {
    .reviews p {
      text-align: left;
    }
-   
+
    .reviews-photo {
 
    }
@@ -278,15 +278,10 @@ textarea {
 
 
    footer .social {
-     display: flex;
-     justify-content: center;
-     align-items: center;
    }
 
    .social-icons {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
+
    }
 
    .copyright {
@@ -389,51 +384,112 @@ textarea {
 
    /*Tablet styles here*/
 
-   /* -------------------- Header Styles -------------------- */
-   header .content-wrapper{
-     width: 83%;
+   /* General Styles */
+
+   .content-wrapper {
+     max-width: 640px;
+     margin: 100px 0;
    }
 
-   .header-divider {
-     width:40%;
-   }
+   /* Header */
 
-   nav {
-     float: right;
-     width: 60%;
-   }
-   /* -------------------- Main Styles -------------------- */
-   aside .content-wrapper {
+   header {
      display: flex;
-     flex-flow: row;
-     width: 100%;
-     margin: 0 50px;
+     justify-content: center;
    }
 
-  .form-description {
-    width: 50%;
+   header .content-wrapper {
+     width: 100%;
+   }
+
+   header nav {
+     width:60%;
+   }
+
+   header nav ul {
+     display: flex;
+     justify-content: space-around;
+   }
+
+  .header-divider {
+    display:none;
   }
 
-  .form {
-    width: 50%;
-  }
+  /* Hero Area */
 
-  .features {
+
+  /* Aside */
+
+  aside .content-wrapper {
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
+    width: 640px;
+    margin: 50px 0;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width:50%;
+    margin: 0;
+    float: left;
+  }
+
+  /* Features */
+
+  .features article {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    flex-flow: row wrap;
+    width: 50%;
+
   }
 
-  .features h2 {
-    padding: 0 54px;
-  }
-  .features article {
-    float:left;
+  .features .features-item-description {
     width: 50%;
+
   }
-   /* -------------------- Footer Styles -------------------- */
+
+  /* Reviews */
+
+  .reviews article {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews article div {
+    width: 50% ;
+  }
+
+   /* Footer */
+
+   footer .content-wrapper {
+     width:640px;
+     margin: 100px 0;
+   }
+
+   .footer-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+   footer .contact {
+     width: 50%;
+     margin-bottom: 0;
+     float: left;
+   }
+
+
+   footer .social {
+     width: 50%;
+     float: left;
+   }
+   footer .copyright {
+     width:100% ;
+   }
 
 
    @media screen and (min-width: 1200px) {
