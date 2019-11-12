@@ -285,7 +285,7 @@ textarea {
    }
 
    .copyright {
-     width: 53%;
+     width: 100%;
 
    }
 
@@ -388,7 +388,7 @@ textarea {
 
    .content-wrapper {
      max-width: 640px;
-     margin: 100px 0;
+     margin: 0;
    }
 
    /* Header */
@@ -442,6 +442,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    flex-basis: auto;
     width: 50%;
 
   }
@@ -466,7 +467,7 @@ textarea {
 
    footer .content-wrapper {
      width:640px;
-     margin: 100px 0;
+     margin: 0;
    }
 
    .footer-content {
@@ -491,6 +492,54 @@ textarea {
      width:100% ;
    }
 
+/* About Styles*/
+
+.mission-content {
+        display:
+        justify-content: space-between;
+        align-items:
+    }
+
+    .mission-content p {
+        width:
+    }
+
+    .contact-section .content-wrapper h2 {
+        width:
+    }
+
+    .contact-content {
+        display:
+        justify-content:
+        align-items:
+}
+
+/* FAQ Styles*/
+
+.faq {
+  margin: 90px 0;
+}
+.faq-content {
+  display: flex;
+  flex-basis: auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.faq article {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.faq-content p, h3 {
+  text-align: left;
+  padding:5px;
+  width: 89%;
+}
 
    @media screen and (min-width: 1200px) {
 
