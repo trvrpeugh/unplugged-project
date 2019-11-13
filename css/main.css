@@ -254,8 +254,13 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
    }
-
    .contact {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+   .contact-info {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
@@ -266,6 +271,7 @@ textarea {
      justify-content: left;
      align-items: center;
      flex-flow: row wrap;
+     text-align: left;
    }
 
    .contact-content p {
@@ -296,20 +302,26 @@ textarea {
    }
 
    footer .content-wrapper {
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
      width: 55%;
      margin: 50px 0;
 
    }
 
-   address .contact {
-     display: flex;
+   .contact-info, .social {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
      text-align: center;
    }
-   .footer-content h4 p {
+
+   .footer-content  {
+     display: flex;
+     justify-content: center;
      text-align: center;
+     flex-flow: row wrap;
      width: 100%;
    }
 
@@ -523,6 +535,7 @@ textarea {
      width: 50%;
      margin-bottom: 0;
      float: left;
+     flex-flow:column;
    }
 
 
@@ -553,13 +566,23 @@ textarea {
     }
 
     .contact-content {
-        flex-flow: column;
-        display:flex;
-        justify-content:center;
-        width: 50%;
-        float: left;
+      display: flex;
+      flex-flow: column;
+      display:flex;
+      justify-content:center;
+      width: 50%;
+      float: left;
 
     }
+
+    .contact-info, .social {
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      text-align: center;
+      width: 50%;
+    }
+
 
     footer .footer-contact {
       padding: 50px;
