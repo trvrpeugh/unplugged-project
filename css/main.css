@@ -99,7 +99,7 @@ textarea {
    ========================================================================== */
 
    .content-wrapper {
-     width: 90%;
+     width: 83%;
    }
    /* -------------------- Base Header - Footer Styles -------------------- */
 
@@ -160,11 +160,7 @@ textarea {
      flex-flow: row wrap;
    }
 
-   main .content-wrapper {
-
-   }
-
-   aside {
+   .itinerary-info {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -172,14 +168,25 @@ textarea {
    }
 
    .form-description {
+     justify-content: center;
+     align-items: center;
+     float: left;
 
-   }
+}
 
    .form {
-
+     justify-content: center;
+     align-items: center;
+     float: left;
    }
 
    .features {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+   .features .content-wrapper {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -193,14 +200,9 @@ textarea {
    .features article {
    width: 55%;
    margin: 30px 0;
+   text-align: center;
   }
 
-  .features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
    .font-awesomeicon {
 
@@ -213,8 +215,25 @@ textarea {
    .reviews{
      display: flex;
      justify-content: center;
+     align-items: center;
      flex-flow: row wrap;
    }
+
+   .reviews .content-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow:row wrap;
+   }
+
+   .reviews article {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+      width: 100%;
+   }
+
    .reviews h2 {
      margin-bottom: 40px;
    }
@@ -237,8 +256,14 @@ textarea {
    }
 
    .contact {
-     display: flex;
      justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     text-align: center;
+   }
+   .contact .content-wrapper {
+     display: flex;
+     justify-content: left;
      align-items: center;
      flex-flow: row wrap;
    }
@@ -276,13 +301,21 @@ textarea {
 
    }
 
-   .footer-content h4, p {
+   address .contact {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     text-align: center;
+   }
+   .footer-content h4 p {
      text-align: center;
      width: 100%;
    }
 
 
    footer .social {
+     text-align: center;
    }
 
    .social-icons {
@@ -291,6 +324,7 @@ textarea {
 
    .copyright {
      width: 100%;
+     text-align: center;
 
    }
 
@@ -424,20 +458,19 @@ textarea {
 
     /* Aside */
 
-    aside .content-wrapper {
+    .itinerary-info {
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-flow: row wrap;
-      width: 640px;
       margin: 50px 0;
     }
 
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
+    .form-description, .form {
       width:50%;
-      margin: 0;
       float: left;
     }
+
 
     /* Features */
 
@@ -460,16 +493,22 @@ textarea {
     .reviews article {
       display: flex;
       justify-content: center;
+      align-items: cetner;
+      flex-flow: row wrap;
     }
 
-    .reviews article div {
+    .reviews article {
       width: 50% ;
     }
 
    /* Footer */
 
+   .contact {
+
+   }
+
    footer .content-wrapper {
-     width:640px;
+     width:83%;
      margin: 0;
    }
 
@@ -542,6 +581,7 @@ textarea {
       margin: 0;
     }
 
+
     .faq article {
       justify-content: center;
       align-items: center;
@@ -557,11 +597,69 @@ textarea {
   }
 
    @media screen and (min-width: 1200px) {
-
    /*Desktop styles here*/
 
-   }
+     .content-wrapper {
+       max-width: 960px
+     }
 
+     .hero-area h1 {
+       display: flex;
+       justify-content: center;
+       width: 50%;
+       margin-left:
+     }
+     .itinerary-info .content-wrapper {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       flex-flow:row wrap;
+     }
+     .form-description, .form {
+       width: 33%
+     }
+
+
+     .form-description .form h3 p {
+       text-align: center;
+
+     }
+     .features article {
+     width: 33%;
+     margin: 30px 0;
+     float: left;
+    }
+    .features h2 {
+      width: 87%;
+    }
+
+   /* Reviews */
+
+    .reviews article {
+        width: 50%;
+    }
+
+  /!--       About Desktop Page     --!/
+
+  .contact {
+    display: flex;
+
+  }
+
+  .contact .content-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
