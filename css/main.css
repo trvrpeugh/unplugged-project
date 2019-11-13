@@ -528,7 +528,7 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
-     padding: 50px;
+     margin:0;
    }
 
    footer .contact {
