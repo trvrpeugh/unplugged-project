@@ -385,88 +385,86 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-   @media screen and (min-width: 768px) {
-
+  @media screen and (min-width: 768px) {
    /*Tablet styles here*/
 
    /* General Styles */
 
-   .content-wrapper {
+    .content-wrapper {
      max-width: 83%;
      margin: 0;
-   }
+    }
 
    /* Header */
 
-   header {
+    header {
      display: flex;
      justify-content: center;
-   }
+    }
 
-   header .content-wrapper {
+    header .content-wrapper {
      width: 100%;
-   }
+    }
 
-   header nav {
+    header nav {
      width:60%;
-   }
+    }
 
-   header nav ul {
+    header nav ul {
      display: flex;
      justify-content: space-around;
-   }
+    }
 
-  .header-divider {
+    .header-divider {
     display:none;
-  }
+    }
 
-  /* Hero Area */
+    /* Hero Area */
 
 
-  /* Aside */
+    /* Aside */
 
-  aside .content-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    width: 640px;
-    margin: 50px 0;
-  }
+    aside .content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      width: 640px;
+      margin: 50px 0;
+    }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width:50%;
-    margin: 0;
-    float: left;
-  }
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width:50%;
+      margin: 0;
+      float: left;
+    }
 
-  /* Features */
+    /* Features */
 
-  .features article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    flex-basis: auto;
-    width: 50%;
+    .features article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      flex-basis: auto;
+      width: 50%;
 
-  }
+    }
 
-  .features .features-item-description {
-    width: 50%;
+    .features .features-item-description {
+      width: 50%;
+      }
 
-  }
+      /* Reviews */
 
-  /* Reviews */
+    .reviews article {
+      display: flex;
+      justify-content: center;
+    }
 
-  .reviews article {
-    display: flex;
-    justify-content: center;
-  }
-
-  .reviews article div {
-    width: 50% ;
-  }
+    .reviews article div {
+      width: 50% ;
+    }
 
    /* Footer */
 
@@ -479,8 +477,8 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
-
-}
+     padding: 50px;
+   }
 
    footer .contact {
      width: 50%;
@@ -497,16 +495,17 @@ textarea {
      width:100% ;
    }
 
-/!--------About Page Styles--------!/
-.mission {
-  margin: 100px 0;
-}
-.mission-content {
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        width: 50%;
-        float: left;
+   /!--------About Page Styles--------!/
+
+   .mission .content-wapper {
+     flex-flow: row wrap;
+   }
+   .mission-content {
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      width: 50%;
+      float: left;
     }
 
     .mission-content p {
@@ -514,47 +513,48 @@ textarea {
       padding: 15px;
     }
 
-    .contact-wrapper {
-      margin: 100px 0;
-
-    }
-
     .contact-content {
         flex-flow: column;
         display:flex;
         justify-content:center;
-        align-items:center;
         width: 50%;
         float: left;
-}
 
+    }
 
-/!--------FAQ Page Styles--------!/
+    footer .footer-contact {
+      padding: 50px;
+    }
 
-.faq {
+    /!--------FAQ Page Styles--------!/
 
-}
-.faq-content {
-  display: flex;
-  flex-basis: auto;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-}
+    .faq .content-wrapper {
+      justify-content: center;
 
-.faq article {
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
+    }
+    .faq-content {
+      display: flex;
+      flex-basis: 40%;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+    }
 
-.faq-content p, h3 {
-  text-align: left;
-  padding:5px;
-  width: 89%;
-}
+    .faq article {
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
+
+    .faq-content p, h2 {
+      font-size: 1rem;
+      text-align: left;
+      padding:5px;
+      width: 89%;
+    }
+  }
 
    @media screen and (min-width: 1200px) {
 
