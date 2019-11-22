@@ -234,8 +234,12 @@ address {
    .hero-area {
      display: flex;
      justify-content: center;
+     align-items: flex-start;
      flex-flow: row wrap;
      background-image: url(../img/hero-image.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
      height: 500px;
    }
 
@@ -592,7 +596,9 @@ input[type=button] {
     }
 
     /* Hero Area */
-
+    .hero-area {
+      height:600px;
+    }
 
     /* Aside */
 
@@ -601,7 +607,6 @@ input[type=button] {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      margin-top: 30px;
     }
 
     .form-description, .form {
