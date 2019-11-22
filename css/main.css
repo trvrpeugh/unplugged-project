@@ -124,6 +124,7 @@ nav ul li a {
 }
 ul,
 ol {
+  text-transform: capitalize;
 
 }
 
@@ -143,6 +144,7 @@ h2 {
   font-family:'Poppins', sans-serif;
   font-size: 2.25em;
   font-weight: lighter;
+  margin: 0;
 }
 
 h3,
@@ -232,8 +234,9 @@ address {
    .hero-area {
      display: flex;
      justify-content: center;
-     align-items: center;
      flex-flow: row wrap;
+     background-image: url(../img/hero-image.png);
+     height: 500px;
    }
 
    .itinerary-info {
@@ -242,6 +245,9 @@ address {
      align-items: center;
      flex-flow: row wrap;
      background: #527158;
+     padding-top:30px;
+     padding-bottom:50px;
+
    }
 
    .form-description {
@@ -254,14 +260,35 @@ address {
    .form {
      justify-content: center;
      align-items: center;
-     float: left;
    }
+
+   input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
    .features {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-image: url(../img/amenities-photo.png);
    }
    .features .content-wrapper {
      display: flex;
@@ -271,22 +298,21 @@ address {
    }
 
    .features h2 {
-     margin-bottom: 60px;
+     margin-top: 30px;
    }
 
    .features article {
    width: 55%;
-   margin: 30px 0;
    text-align: center;
   }
 
 
    .font-awesomeicon {
+     margin: 30px 0;
 
    }
 
    .features-item-description {
-
    }
 
    .reviews{
@@ -298,29 +324,37 @@ address {
 
    .reviews .content-wrapper {
      display: flex;
-     justify-content: center;
+     justify-content: space-around;
      align-items: center;
      flex-flow:row wrap;
-     margin: 50px 0;
+     margin: 30px 0;
    }
 
-   .reviews article {
+   .reviews-content {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
       width: 100%;
    }
-
    .reviews h2 {
-     margin-bottom: 40px;
+     font-size: 2em;
+     margin: 10px 0;
    }
-
    .reviews p {
      text-align: left;
+     font-size: .875em;
+   }
+
+   .reviews h3 {
+     width: 100%;
+     margin: 0;
+     text-align: left;
+     padding: 5px;
    }
 
    .reviews-photo {
+     padding: 10px;
 
    }
 
@@ -406,9 +440,13 @@ address {
 
    footer .social {
      text-align: center;
+     width: 100%;
    }
 
    .social-icons {
+     display: flex;
+     flex-flow: row;
+     justify-content: space-between;
 
    }
 
@@ -553,7 +591,7 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      margin: 50px 0;
+      margin-top: 30px;
     }
 
     .form-description, .form {
@@ -568,7 +606,7 @@ address {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-flow: row wrap;
+      flex-flow: column;
       flex-basis: auto;
       width: 50%;
 
@@ -580,16 +618,30 @@ address {
 
       /* Reviews */
 
-    .reviews article {
+    .reviews-content {
       display: flex;
       justify-content: center;
-      align-items: cetner;
+      align-items: center;
       flex-flow: row wrap;
+      width: 50%;
+      float: left;
     }
 
     .reviews article {
-      width: 50% ;
+      display: flex;
+      justify-content: center;
     }
+
+    .reviews-photo {
+      padding:5px;
+    }
+
+    .reviews h3, p {
+      width: 100%;
+      padding:5px;
+      margin: 0;
+    }
+
 
    /* Footer */
 
@@ -735,7 +787,7 @@ address {
 
      }
      .features article {
-     width: 33%;
+     width: 30%;
      margin: 30px 0;
      float: left;
     }
@@ -744,10 +796,12 @@ address {
     }
 
    /* Reviews */
-
-    .reviews article {
-        width: 50%;
-    }
+   .reviews {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       flex-flow: row wrap;
+   }
 
   /!--       About Desktop Page     --!/
 
