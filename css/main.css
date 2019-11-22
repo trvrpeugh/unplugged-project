@@ -447,12 +447,14 @@ input[type=button] {
      display: flex;
      flex-flow: row;
      justify-content: space-between;
+     width: 70%;
 
    }
 
    .copyright {
      width: 100%;
      text-align: center;
+     margin-top: 50px;
 
    }
 
@@ -670,8 +672,13 @@ input[type=button] {
 
 
    footer .social {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-flow: column;
      width: 50%;
      float: left;
+
    }
    footer .copyright {
      width:100% ;
