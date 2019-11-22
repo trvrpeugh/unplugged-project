@@ -97,15 +97,17 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 /* General Styles */
 
 html {
   font-family:'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   color: #e1e2ec;
 }
 body {
   background-color: #202322;
+  font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -126,6 +128,8 @@ ol {
 }
 
 a {
+  color: #e2e3ed;
+  text-decoration: none;
 
 }
 
@@ -143,7 +147,7 @@ h2 {
 
 h3,
 h4 {
-  font-family:'Open Sans', sans-serif;
+  font-family:'Poppins', sans-serif;
   font-size: 1.125em;
 
 }
@@ -237,6 +241,7 @@ address {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #527158;
    }
 
    .form-description {
@@ -358,6 +363,7 @@ address {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #527158;
    }
 
    .faq-content-wrapper {
