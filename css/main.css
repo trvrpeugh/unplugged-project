@@ -365,12 +365,19 @@ input[type=button] {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #527158;
+     padding: 50px 0;
+   }
+   iframe {
+     width: 100%;
    }
    .contact {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background: #2a423a;
+     padding: 50px 0;
    }
    .contact-info {
      justify-content: center;
@@ -398,6 +405,7 @@ input[type=button] {
      align-items: center;
      flex-flow: row wrap;
      background: #527158;
+     padding: 50px 0;
    }
 
    .faq-content-wrapper {
