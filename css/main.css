@@ -432,7 +432,7 @@ input[type=button] {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
-     width: 55%;
+     width: 83%;
      margin: 50px 0;
 
    }
@@ -454,6 +454,8 @@ input[type=button] {
 
 
    footer .social {
+     display: flex;
+     flex-flow: column;
      text-align: center;
      width: 100%;
    }
