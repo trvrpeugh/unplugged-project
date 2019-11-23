@@ -293,6 +293,9 @@ input[type=button] {
      align-items: center;
      flex-flow: row wrap;
      background-image: url(../img/amenities-photo.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
    }
    .features .content-wrapper {
      display: flex;
@@ -584,6 +587,7 @@ input[type=button] {
 
     header nav {
      width:60%;
+     justify-content: flex-end;
     }
 
     header nav ul {
@@ -784,6 +788,7 @@ input[type=button] {
      .content-wrapper {
        max-width: 960px
      }
+
 
      .hero-area h1 {
        display: flex;
